@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+id btnCalcular
+id btnLimpar
+id etCorrente
+id etResistencia
+id etTensao
+id tvResultado
+layout activity_main
+string app_name
+style Theme.AppTelaUnica

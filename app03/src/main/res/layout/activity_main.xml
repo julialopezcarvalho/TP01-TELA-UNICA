@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1ª Lei de Ohm"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V = R × I — preencha DOIS campos e deixe o outro em branco."
+            android:textSize="14sp"
+            android:paddingTop="4dp"
+            android:paddingBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etTensao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tensão (V) - volts"
+            android:inputType="numberDecimal"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/etResistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Resistência (R) - ohms"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="12dp"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/etCorrente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Corrente (I) - ampères"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="12dp"
+            android:autofillHints="" />
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limpar"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+</ScrollView>
